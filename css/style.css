@@ -129,8 +129,15 @@ img {
  ************************************************/
 
 
+
+/*INIZIO MEDIA MOBILE*/
+
 @media screen and (max-width:479px){
 
+    .body{
+        width: 100vw;
+    }
+    
     h1,
     h3 {
     color: #eebbc3;
@@ -143,7 +150,7 @@ img {
     .row{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
     }
 
     .lessons .col{
@@ -154,8 +161,46 @@ img {
         margin-top: 100px;
     }
 
-    .container{
+    /*FINE LESSONS INIZIO STEPS*/
+
+    .steps .container{
         display: flex;
         flex-direction: column;
+        width: 100vw;
     }
+
+    .steps .h2{
+        text-align: center;
+    }
+
+    .steps .col{
+        width: 90vw;
+        padding: 5vh 0;
+        margin: 0 auto;
+    }
+
+    /*FINE STEPS INIZIO WHY US*/
+
+    .why-us .container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .why-us .h2{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .why-us .col{
+        margin: 0 auto;
+        width: 100vw;
+        padding: 5vh 5vw;
+    }
+
+    .why-us .col-left{
+        max-width: 60vw;
+    }
+
+    /*FINE MEDIA MOBILE*/
 }
